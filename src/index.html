@@ -1,28 +1,32 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Proyecto 1: Cipher</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
+    <style>
+      .content {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div id="homepage">
       <h1>Cifrado César</h1>
-      <button>Cifrar</button>
-      <button>Descifrar</button>
-      <button>?</button>
+      <button onclick="toEncodePage()">Cifrar</button>
+      <button onclick="toDecodePage()">Descifrar</button>
+      <button onclick="toAboutPage()">?</button>
     </div>
-
     <div id="aboutPage" class="content">
       <h2>Acerca de...</h2>
       <h3>¿Qué es el cifrado César?</h3>
       <p></p>
       <h3>¿Cómo funciona esta aplicación?</h3>
       <p></p>
-      <button>Página de inicio</button>
+      <button onclick="toTheStart1()">Página de inicio</button>
     </div>
-
     <div id="encodePage" class="content">
       <p>Texto a cifrar:</p>
       <input type="text">
@@ -31,9 +35,8 @@
       <button>Cifrar</button>
       <p>Texto cifrado:</p>
       <input type="text"><br><br>
-      <button>Página de inicio</button>
+      <button onclick="toTheStart2()">Página de inicio</button>
     </div>
-
     <div id="decodePage" class="content">
       <p>Texto cifrado:</p>
       <input type="text">
@@ -42,8 +45,36 @@
       <button>Descifrar</button>
       <p>Texto descifrado:</p>
       <input type="text"><br><br>
-      <button>Página de inicio</button>
+      <button onclick="toTheStart3()">Página de inicio</button>
     </div>
+    
+    <script>
+      function toEncodePage() {
+        document.getElementById("homepage").style.display = "none";
+        document.getElementById("encodePage").style.display = "block";
+      }
+      function toDecodePage() {
+        document.getElementById("homepage").style.display = "none";
+        document.getElementById("decodePage").style.display = "block";
+      }
+      function toAboutPage() {
+        document.getElementById("homepage").style.display = "none";
+        document.getElementById("aboutPage").style.display = "block";
+      }
+      function toTheStart1() {
+        document.getElementById("aboutPage").style.display = "none";
+        document.getElementById("homepage").style.display = "block";
+      }
+      function toTheStart2() {
+        document.getElementById("encodePage").style.display = "none";
+        document.getElementById("homepage").style.display = "block";
+      }
+      function toTheStart3() {
+        document.getElementById("decodePage").style.display = "none";
+        document.getElementById("homepage").style.display = "block";
+      }
+    </script>
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
