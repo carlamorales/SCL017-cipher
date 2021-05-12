@@ -2,12 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width">
+    <title>Proyecto 1: Cipher</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <div id="homepage">
+      <h1>Cifrado César</h1>
+      <button>Cifrar</button>
+      <button>Descifrar</button>
+      <button>?</button>
+    </div>
+
+    <div id="aboutPage" class="content">
+      <h2>Acerca de...</h2>
+      <h3>¿Qué es el cifrado César?</h3>
+      <p></p>
+      <h3>¿Cómo funciona esta aplicación?</h3>
+      <p></p>
+      <button>Página de inicio</button>
+    </div>
+
+    <div id="encodePage" class="content">
+      <p>Texto a cifrar:</p>
+      <input type="text">
+      <p>Número de desplazamientos:</p>
+      <input type="text">
+      <button>Cifrar</button>
+      <p>Texto cifrado:</p>
+      <input type="text"><br><br>
+      <button>Página de inicio</button>
+    </div>
+
+    <div id="decodePage" class="content">
+      <p>Texto cifrado:</p>
+      <input type="text">
+      <p>Número de desplazamientos:</p>
+      <input type="text">
+      <button>Descifrar</button>
+      <p>Texto descifrado:</p>
+      <input type="text"><br><br>
+      <button>Página de inicio</button>
     </div>
     <script src="index.js" type="module"></script>
   </body>
