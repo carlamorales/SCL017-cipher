@@ -2,20 +2,27 @@
   display: none;
 }
 body {
+  margin: 50px;
   background-color: black;
   color: pink;
   text-align: center;
   font-family: monospace;
-  font-size: 40px
+  font-size: 35px;
+}
+div {
+  border: 3px solid pink;
+  border-radius: 8px;
+  padding: 30px;
 }
 button {
   background-color: pink;
   font-family: monospace;
-  font-size: 40px;
-  border-radius: 10px;
+  font-size: 35px;
+  border-radius: 8px;
 }
 input {
   background-color: pink;
-  font-size: 40px;
-  border-radius: 10px;
+  font-family: monospace;
+  font-size: 35px;
+  border-radius: 8px;
 }
