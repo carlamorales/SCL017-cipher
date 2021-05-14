@@ -31,3 +31,8 @@ document.getElementById("encodeBtn").addEventListener("click", function() {
   let offset = parseInt(document.getElementById("toTheRight").value);
   document.getElementById("outTxt").value = cipher.encode(string, offset);
 });
+document.getElementById("decodeBtn").addEventListener("click", function() {
+  let stringTwo = document.getElementById("inTxt2").value;
+  let offsetTwo = parseInt(document.getElementById("toTheLeft").value);
+  document.getElementById("outTxt2").value = cipher.decode(stringTwo, offsetTwo);
+});
