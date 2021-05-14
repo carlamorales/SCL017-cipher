@@ -32,7 +32,7 @@ document.getElementById("encodeBtn").addEventListener("click", function() {
   document.getElementById("outTxt").value = cipher.encode(string, offset);
 });
 document.getElementById("decodeBtn").addEventListener("click", function() {
-  let stringTwo = document.getElementById("inTxt2").value;
-  let offsetTwo = parseInt(document.getElementById("toTheLeft").value);
-  document.getElementById("outTxt2").value = cipher.decode(stringTwo, offsetTwo);
+  let string2 = document.getElementById("inTxt2").value;
+  let offset2 = parseInt(document.getElementById("toTheLeft").value);
+  document.getElementById("outTxt2").value = cipher.decode(string2, offset2);
 });
