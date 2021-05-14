@@ -10,29 +10,27 @@
   <body>
     <div id="homepage">
       <h1>Cifrado César</h1>
-      <button id="toEncodePage">Cifrar</button><br><br><br>
-      <button id="toDecodePage">Descifrar</button><br><br><br>
-      <button id="toAboutPage">?</button><br><br>
+      <button id="toEncPage" class="homeBtn">Cifrar</button><br><br><br>
+      <button id="toDecPage" class="homeBtn">Descifrar</button><br><br><br>
+      <button id="toAbtPage" class="homeBtn">?</button><br>
     </div>
-    <div id="aboutPage" class="content">
+    <div id="aboutPage" class="contents">
       <h2>Acerca de...</h2>
       <h3>¿Qué es el cifrado César?</h3>
-      <p></p>
       <h3>¿Cómo funciona esta aplicación?</h3>
-      <p></p>
-      <button id="toTheStart1">Página de inicio</button>
+      <button id="toHPage1">Página de inicio</button>
     </div>
-    <div id="encodePage" class="content">
+    <div id="encodePage" class="contents">
       <p>Texto a cifrar:</p>
       <input id="inTxt" type="text">
       <p>Número de desplazamientos:</p>
       <input id="toTheRight" type="text">
-      <button id="funEnc">Cifrar</button>
+      <button id="encodeBtn">Cifrar</button>
       <p>Texto cifrado:</p>
-      <input id="outTxt" type="text">
-      <button id="toTheStart2">Página de inicio</button>
+      <input id="outTxt" type="text"><br><br>
+      <button id="toHPage2">Página de inicio</button>
     </div>
-    <div id="decodePage" class="content">
+    <div id="decodePage" class="contents">
       <p>Texto cifrado:</p>
       <input type="text">
       <p>Número de desplazamientos:</p>
@@ -40,9 +38,8 @@
       <button>Descifrar</button>
       <p>Texto descifrado:</p>
       <input type="text"><br><br>
-      <button id="toTheStart3">Página de inicio</button>
+      <button id="toHPage3">Página de inicio</button>
     </div>
-  
     <script src="index.js" type="module"></script>
   </body>
 </html>

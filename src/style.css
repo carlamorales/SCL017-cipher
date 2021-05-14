@@ -1,28 +1,31 @@
-.content {
+.contents {
   display: none;
 }
 body {
-  margin: 50px;
+  margin: 40px;
   background-color: black;
   color: pink;
   text-align: center;
   font-family: monospace;
-  font-size: 35px;
+  font-size: 33px;
 }
 div {
   border: 3px solid pink;
   border-radius: 8px;
-  padding: 30px;
+  padding: 30px;  
 }
 button {
   background-color: pink;
   font-family: monospace;
-  font-size: 35px;
+  font-size: 30px;
   border-radius: 8px;
+}
+.homeBtn {
+  font-size: 50px;
 }
 input {
   background-color: pink;
   font-family: monospace;
-  font-size: 35px;
+  font-size: 30px;
   border-radius: 8px;
 }
