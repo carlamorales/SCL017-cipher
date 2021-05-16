@@ -1,5 +1,8 @@
 let cipher = {
   encode: (string, offset) => {
+    if (typeof string !== "string" || typeof offset !== "number") {
+      throw new TypeError("¡Error!");
+    }
     let newString = "";
     for (let i = 0; i < string.length; i++) {
       let asciiNum = string.charCodeAt(i); 
@@ -11,6 +14,9 @@ let cipher = {
     return newString;
   },
   decode: (string2, offset2) => {
+    if (typeof string2 !== "string" || typeof offset2 !== "number") {
+      throw new TypeError("¡Error!");
+    }
     let newString2 = "";
     for (let i = 0; i < string2.length; i++) {
       let asciiNum2 = string2.charCodeAt(i);
