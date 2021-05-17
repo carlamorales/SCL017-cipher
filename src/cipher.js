@@ -1,5 +1,5 @@
 let cipher = {
-  encode: (string, offset) => {
+  encode: (offset, string) => {
     if (typeof string !== "string" || typeof offset !== "number") {
       throw new TypeError("¡Error!");
     }
@@ -13,7 +13,7 @@ let cipher = {
     }
     return newString;
   },
-  decode: (string2, offset2) => {
+  decode: (offset2, string2) => {
     if (typeof string2 !== "string" || typeof offset2 !== "number") {
       throw new TypeError("¡Error!");
     }
