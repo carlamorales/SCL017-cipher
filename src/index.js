@@ -29,10 +29,10 @@ document.getElementById("toHPage3").addEventListener("click", function() {
 document.getElementById("encodeBtn").addEventListener("click", function() {
   let string = document.getElementById("inTxt").value;
   let offset = parseInt(document.getElementById("toTheRight").value);
-  document.getElementById("outTxt").value = cipher.encode(string, offset);
+  document.getElementById("outTxt").value = cipher.encode(offset, string);
 });
 document.getElementById("decodeBtn").addEventListener("click", function() {
   let string2 = document.getElementById("inTxt2").value;
   let offset2 = parseInt(document.getElementById("toTheLeft").value);
-  document.getElementById("outTxt2").value = cipher.decode(string2, offset2);
+  document.getElementById("outTxt2").value = cipher.decode(offset2, string2);
 });
