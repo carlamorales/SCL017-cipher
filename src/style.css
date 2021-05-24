@@ -2,7 +2,7 @@
   display: none;
 }
 body {
-  margin: 40px;
+  margin: 30px;
   background-color: black;
   color: pink;
   text-align: center;
@@ -12,7 +12,7 @@ body {
 div {
   border: 3px solid pink;
   border-radius: 8px;
-  padding: 30px;  
+  padding: 25px;  
 }
 button {
   background-color: pink;
@@ -33,9 +33,9 @@ h2 {
   font-size: 35px;
 }
 h3 {
-  font-size: 25px;
+  font-size: 22px;
 }
 .info {
-  font-size: 16px;
+  font-size: 18px;
   text-align: justify;
 }
