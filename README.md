@@ -403,7 +403,7 @@ A continuación un video de Michelle ¡Escúchala con detenimiento y sigue sus c
 
 ## 8. Checklist
 <details>
-  <summary>!Click para expandir¡</summary>
+  <summary>Click para expandir</summary>
 
 Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
@@ -434,5 +434,70 @@ de las usuarias.
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
+</details>
+
+***
+<details>
+<summary>Carla Morales</summary>
+
+## Premisa
+
+### ¿Qué es el cifrado César?
+
+El [cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar) es una técnica simple y muy utilizada de [criptografía](https://es.wikipedia.org/wiki/Criptograf%C3%ADa). Su nombre remite al emperador romano Julio César, quien, según se cuenta, la habría utilizado para blindar la mensajería textual que mantenía entre sí y sus generales.
+
+### ¿Cómo funciona esta aplicación?
+
+Esta aplicación tiene cuatro pantallas, tres de ellas funcionales y una informativa (en esta última se consigna la síntesis de la presente información). En la primera pantalla, o Pantalla de inicio, se encuentran tres botones direccionales. Cliquear el botón Cifrar lleva a la Pantalla de cifrado; ahí se podrá ingresar un texto común y cifrarlo al asignar a los caracteres que lo componen un número de desplazamientos hacia la derecha en la secuencia alfabética. Puede ser cualquier número; queda a elección. Otro tanto ocurre si, estando en la Pantalla de inicio, se cliquea el botón Descifrar: este lleva a la Pantalla de descifrado, donde se podrá ingresar un texto ya cifrado y tornarlo a texto común al asignar a los caracteres que lo componen un número de desplazamientos hacia la izquierda en la secuencia alfabética. En este caso, se deberá conocer el número de desplazamientos que originalmente se utilizó para cifrar el texto en cuestión, de manera que se pueda revertir su cifrado (o, en una palabra, descifrarlo) al utilizar ese mismo número de desplazamientos, pero ahora en dirección opuesta.
+
+Podrán cifrarse y descifrarse textos compuestos de cualquier combinación de caracteres alfabéticos, sin afectarse el resultado por el uso de mayúsculas, minúsculas, o de ambas en simultáneo.
+
+## Desglose
+
+### Experiencia de uso
+
+La usuaria ideal de esta aplicación necesita cifrar y descifrar texto breve; principalmente contraseñas y mensajes de pocas palabras. En detalle, la usuaria acostumbra a cifrar algunas de las contraseñas con las que inicia sesión en sitios y servicios de streaming (como Netflix y Amazon Prime) y en sucursales virtuales misceláneas (como los sitios en línea de su banco y de su proveedor de telecomunicación). Asimismo, cifra cierto contenido textual que comparte en sus redes sociales y mediante sus aplicaciones de mensajería instantánea.
+
+La experiencia de uso de la aplicación puede transformarse de individual a colectiva si, por ejemplo, la usuaria requiere que sus contraseñas y/o mensajes sean legibles para otra/s persona/s. En tal caso, la usuaria compartirá la aplicación con ella/s (de ahí en más, también usuaria/s), a quien/es además deberá informar el número y la dirección del desplazamiento de los caracteres en la secuencia alfabética que aplicó para cifrar su texto, de manera que la/s otra/s usuaria/s puedan descifrarlo al aplicarle el mismo número de desplazamientos, pero en dirección contraria.
+
+La usuaria ideal puede tener la necesidad de mostrar sus contraseñas a parientes con quienes comparte responsabilidades financieras (el pago al antedicho proveedor de telecomunicación, por ejemplo), y tener asimismo la necesidad de privatizar sus conversaciones en un entorno desprovisto de privacidad (como un grupo familiar o laboral de WhatsApp o Messenger). Finalmente, la usuaria siempre puede dar a la aplicación tantas índoles de uso como amerite o sea capaz de imaginar.
+
+## Diseño
+
+### Bocetos de baja fidelidad
+
+Estos son los dibujos en digital de los que fueron los bocetos [en](src\images\papel1.jpg) [papel](src\images\bajafidelidad2.png) de la aplicación de cifrado y descifrado:
+
+![](src\images\bajafidelidad1.png)
+
+En el primer boceto se plasma una única pantalla dividida en dos secciones: a la izquierda, la sección para cifrar texto; y a la derecha, la sección para descifrarlo. Este primer boceto se mostró a un par de personas y ambas opinaron que la aplicación lucía “demasiado simple” y, ante todo, desprovista de información contextual; si bien los botones, casillas y textos a ambos lados de la pantalla resultaron lo bastante auto explicativos respecto de sus funciones particulares. Atendiendo a esto, se dibujó un segundo boceto:
+
+![](src\images\bajafidelidad2.png)
+
+En el segundo boceto, la única pantalla original se convierte en dos, y además se agregan, por un lado, una pantalla informativa, en la que se contextualiza la aplicación y se explica a grandes rasgos su funcionamiento; y, por otro lado, una pantalla de inicio, cuyos botones permiten navegar desde la misma hacia las otras pantallas antes mencionadas y viceversa. Este flujo de navegación entre pantallas se ilustra en el boceto mediante flechas direccionales.
+
+Igual que el primer boceto, este segundo boceto fue evaluado por el mismo par de personas, y puesto que recibió una buena acogida, se lo consideró el boceto definitivo y se siguió trabajando en razón a él.
+
+### Prototipo de alta fidelidad
+
+El prototipo de alta fidelidad de esta aplicación se basó en el antedicho boceto definitivo y se creó en Figma. Está [aquí](https://www.figma.com/file/NFfMOkpz5UW1DB8LwFZ4wo/Proyecto-Cipher-(prototipo-de-alta-fidelidad)?node-id=0%3A1).
+
+Respecto de las decisiones que determinaron el diseño plasmado en el prototipo, y luego en la aplicación misma: 1) se optó por dar a la aplicación cuatro pantallas para que sus elementos informativos y funcionales no se “atiborraran” en un mismo espacio compartido. 2) se escogió un tamaño y tipo de fuente legible antes que ornamental; lo bastante grande y “limpio” de adornos como para que los textos que el usuario recibe e ingresa le resulten siempre comprensibles. A las casillas contenedoras de texto se les dio el tamaño idóneo para recibir y retornar cadenas breves de caracteres (si bien en la práctica pueden ingresarse y retornarse cadenas de texto más largas). El color de fondo de la aplicación contrasta con el color de la fuente de letra también en pos de facilitar la visualización de todos los elementos plasmados en las pantallas.
+
+## Anexo
+
+### Plan de acción
+
+Antes de comenzar a desarrollar el proyecto de cifrado/descifrado, formulé un plan de acción que contemplaba los siguientes objetivos generales:
+
+* Practicar CSS.
+* Informarme acerca de UX.
+* Estudiar y practicar con strings, arrays y objetos de JS. También con funciones y con métodos de DOM.
+* Informarme acerca de, y practicar con, herramientas hasta entonces desconocidas para mí, como GitHub, Git y Node.
+* Familiarizarme con los conceptos asociados a las antedichas herramientas, como “repositorio”, “fork”, “boilerplate”, “testeo”, etc.
+
+Luego, mientras llevé a cabo el proyecto, fui más o menos capaz de cumplir progresivamente sobre todo los últimos tres objetivos antes listados, si bien solo en la medida de lo que permitieron los plazos y de lo que ameritó el proyecto. En otras palabras, aprendí nuevas formas de usar y manipular strings, objetos, funciones y eventos del DOM, y puse en práctica comandos de Git y Node, pero me pareció evidente que para profundizar en esas cuestiones me hace falta aún mucho tiempo de dedicación al estudio y la práctica y de enfrentarme a los retos propios de los siguientes proyectos.
+
+Respecto de CSS y UX, los utilicé solo en la medida de lo que entiendo de ellos, es decir, no mucho. Pude, eso sí, dar a la aplicación de cifrado/descifrado el aspecto que pretendía, y al planearla y llevarla a cabo siempre tuve en consideración a una usuaria ideal, pero de características puntuales fundadas en las de usuarias reales. Con todo, igualmente debí familiarizarme, si bien muy someramente, con herramientas asociadas a CSS y UX, como Figma, lo cual a la vez me llevó a reformular mi plan de acción original.
 
 </details>

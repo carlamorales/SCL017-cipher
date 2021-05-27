@@ -1,7 +1,5 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
-
 document.getElementById("toEncPage").addEventListener("click", function() {
   document.getElementById("homepage").style.display = "none";
   document.getElementById("encodePage").style.display ="block";
