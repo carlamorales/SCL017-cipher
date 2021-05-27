@@ -466,13 +466,13 @@ La usuaria ideal puede tener la necesidad de mostrar sus contraseñas a pariente
 
 ### Bocetos de baja fidelidad
 
-Estos son los dibujos en digital de los que fueron los bocetos [en](src\images\papel1.jpg) [papel](src\images\bajafidelidad2.png) de la aplicación de cifrado y descifrado:
+Estos son los dibujos en digital de los que fueron los bocetos [en](src\images\papel1.jpg) [papel](src\images\papel2.png) de la aplicación de cifrado y descifrado:
 
-![](src\images\bajafidelidad1.png)
+![](src/images/bajafidelidad1.png)
 
 En el primer boceto se plasma una única pantalla dividida en dos secciones: a la izquierda, la sección para cifrar texto; y a la derecha, la sección para descifrarlo. Este primer boceto se mostró a un par de personas y ambas opinaron que la aplicación lucía “demasiado simple” y, ante todo, desprovista de información contextual; si bien los botones, casillas y textos a ambos lados de la pantalla resultaron lo bastante auto explicativos respecto de sus funciones particulares. Atendiendo a esto, se dibujó un segundo boceto:
 
-![](src\images\bajafidelidad2.png)
+![](src/images/bajafidelidad2.png)
 
 En el segundo boceto, la única pantalla original se convierte en dos, y además se agregan, por un lado, una pantalla informativa, en la que se contextualiza la aplicación y se explica a grandes rasgos su funcionamiento; y, por otro lado, una pantalla de inicio, cuyos botones permiten navegar desde la misma hacia las otras pantallas antes mencionadas y viceversa. Este flujo de navegación entre pantallas se ilustra en el boceto mediante flechas direccionales.
 
