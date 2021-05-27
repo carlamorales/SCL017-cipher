@@ -500,4 +500,6 @@ Luego, mientras llevé a cabo el proyecto, fui más o menos capaz de cumplir pro
 
 Respecto de CSS y UX, los utilicé solo en la medida de lo que entiendo de ellos, es decir, no mucho. Pude, eso sí, dar a la aplicación de cifrado/descifrado el aspecto que pretendía, y al planearla y llevarla a cabo siempre tuve en consideración a una usuaria ideal, pero de características puntuales fundadas en las de usuarias reales. Con todo, igualmente debí familiarizarme, si bien muy someramente, con herramientas asociadas a CSS y UX, como Figma, lo cual a la vez me llevó a reformular mi plan de acción original.
 
+Por último, elo proyecto se encuentra [aquí](https://carlamorales.github.io/SCL017-cipher/).
+
 </details>
